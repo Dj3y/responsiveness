@@ -1,0 +1,56 @@
+/* Mobile style */
+body{
+    background-color: #DBAFA0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 100%;
+}
+
+/* #medium, #large{
+    display: none;
+} */
+
+/* screen with width between 480px and 1023px */
+@media screen and (min-width: 480px) {
+    body{
+        background-color:#BB8493;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    /* #medium{
+        display: block;
+    }
+    #small, #large{
+        display: none;
+    } */
+    #small{
+        width: 75%;
+    }
+
+    #medium {
+        width: 25%;
+    }
+    #large{
+        width: 100%;
+    }
+}
+
+/* screen bigger than 1024px */
+@media screen and (min-width: 1024px) {
+    body{
+        background-color: #704264;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /* #large{
+        display: block;
+    }
+    #small, #medium{
+        display: none;
+    } */
+
+    #small, #medium, #large{
+        width: 33%;
+    }
+}
